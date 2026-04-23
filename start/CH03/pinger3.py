@@ -12,7 +12,7 @@ ip_prefix = "192.168.0."
 #Determine the current OS
 current_os = platform.system().lower()
 # Loop from 0-254
-for final_octet in range(254):
+for final_octet in range(95, 105):
     #Assign IP to ping to a variable
     # Adding 1 to final_octet because loop start at 0
     ip = ip_prefix + str(final_octet + 1)
@@ -28,3 +28,4 @@ for final_octet in range(254):
     #Print results to console only if succesful
     if exit_code == 0:
         print("{0} is online".format(ip))
+    
