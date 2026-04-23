@@ -20,4 +20,4 @@ else:
 # Execute command and capture exit code
 exit_code = os.system(ping_cmd) 
 # Print results to console 
-print(exit_node)    
+print(exit_code)    
